@@ -49,7 +49,7 @@ class Answer(models.Model):
     poll = models.ForeignKey(Poll, related_name='poll', on_delete=models.CASCADE)
     question = models.ForeignKey(Question, related_name='question', on_delete=models.CASCADE)
     choice = models.ForeignKey(Choice, related_name='choice', on_delete=models.CASCADE, null=True)
-    choice_text = models.CharField('Текст варианта ответа', max_length=200, null=True)
+    answer_text = models.CharField('Текст варианта ответа', max_length=200, null=True)
 
     def __str__(self):
         return self.choice

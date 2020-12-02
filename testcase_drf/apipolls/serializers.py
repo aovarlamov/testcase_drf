@@ -11,7 +11,7 @@ class AnswerListSerializer(serializers.ModelSerializer):
     poll = serializers.SlugRelatedField(queryset=Poll.objects.all(), slug_field='id')
     question = serializers.SlugRelatedField(queryset=Question.objects.all(), slug_field='id')
     choice = serializers.SlugRelatedField(queryset=Choice.objects.all(), slug_field='id', allow_null=True)
-    choice_text = serializers.CharField(max_length=200, allow_null=True, required=False)
+    answer_text = serializers.CharField(max_length=200, allow_null=True, required=False)
 
     class Meta:
         model = Answer
