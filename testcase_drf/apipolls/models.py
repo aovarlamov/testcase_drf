@@ -52,7 +52,7 @@ class Answer(models.Model):
     answer_text = models.CharField('Текст варианта ответа', max_length=200, null=True)
 
     def __str__(self):
-        return self.choice
+        return self.answer_text
 
     class Meta:
         verbose_name = 'Ответ'

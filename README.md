@@ -31,6 +31,10 @@
   ```
 
 ## API документация
+
+### Админ панель Django
+* URL: http://localhost:8000/admin/
+
 ### Поплучить токен для входа: 
 * Метод запроса: GET
 * URL: http://localhost:8000/api/login/
