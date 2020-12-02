@@ -54,7 +54,7 @@ curl --location --request GET 'http://localhost:8000/api/login/' --form 'usernam
     * poll_name: Назавание опроса
     * pub_date: Дата публикации в формате YYYY-MM-DD HH:MM:SS
     * end_date: Дата окончания опроса в формате YYYY-MM-DD HH:MM:SS
-    * Poll_description: Описание опроса
+    * poll_description: Описание опроса
 * Пример: 
 ```
 curl --location --request POST 'http://localhost:8000/api/poll/create/' --header 'Authorization: Token %userToken' --form 'poll_name=%poll_name' --form 'pub_date=%pub_date' --form 'end_date=%end_date --form 'poll_description=%poll_description'
@@ -69,7 +69,7 @@ curl --location --request POST 'http://localhost:8000/api/poll/create/' --header
     * userToken: Токен пользователя
     * poll_name: Название опроса
     * end_date: Дата окончания опроса в формате YYYY-MM-DD HH:MM:SS
-    * Poll_description: Описание опроса
+    * poll_description: Описание опроса
 * Пример:
 ```
 curl --location --request PATCH 'http://localhost:8000/api/poll/update/[poll_id]/ --header 'Authorization: Token %userToken' --form 'poll_name=%poll_name' --form 'end_date=%end_date --form 'poll_description=%poll_description'
