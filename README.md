@@ -97,7 +97,7 @@ curl --location --request DELETE 'http://localhost:8000/api/poll/delete/[poll_id
 curl --location --request GET 'http://localhost:8000/api/poll/view/' --header 'Authorization: Token %userToken'
 ```
 
-### Просмотр определенного запроса:
+### Просмотр активных опросов:
 * Метод запроса: GET
 * URL: http://localhost:8000/api/poll/view/active/
 * Переменные:
